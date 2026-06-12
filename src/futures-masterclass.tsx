@@ -1200,7 +1200,7 @@ const MODULES = [
 function LoadingScreen() {
   return (
     <div style={{minHeight:"100vh",background:C.bg0,display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",gap:16}}>
-      <img src="/image.png" alt="Logo" style={{width: 80, height: 80, borderRadius: 8, objectFit: "cover"}}/>
+      <div style={{fontSize:36}}>📈</div>
       <div style={{color:C.gold,fontSize:14,fontFamily:"monospace"}}>Loading your progress...</div>
     </div>
   );
@@ -1213,7 +1213,7 @@ function HomeScreen({ completed, onStart, onGoTo }) {
   return (
     <div style={{minHeight:"100vh",background:C.bg0,color:C.tx,fontFamily:"'Inter',system-ui,sans-serif",overflowY:"auto"}}>
       <div style={{background:`linear-gradient(135deg,${C.bg1},#0A1A35)`,borderBottom:`1px solid ${C.bd}`,padding:"60px 32px 48px",textAlign:"center"}}>
-        <img src="/image.png" alt="Logo" style={{width: 120, height: 120, borderRadius: 12, marginBottom:14, objectFit: "cover"}}/>
+        <div style={{fontSize:50,marginBottom:14}}>📈</div>
         <div style={{color:C.gold,fontSize:11,fontFamily:"monospace",letterSpacing:".2em",marginBottom:10,textTransform:"uppercase"}}>Complete Trading Course</div>
         <h1 style={{fontSize:36,fontWeight:900,margin:"0 0 14px",lineHeight:1.1,background:`linear-gradient(90deg,${C.gold},${C.goldL})`,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>NIHA-TRADING<br/>Masterclass</h1>
         <p style={{color:C.sub,fontSize:15,maxWidth:500,margin:"0 auto 26px",lineHeight:1.6}}>Zero to Professional — covering Futures basics, Smart Money Concepts, ICT methodology, Risk Management, and full trade execution.</p>
